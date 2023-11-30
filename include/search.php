@@ -12,7 +12,6 @@ $row_result = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM `tableproducts`
                                                     INNER JOIN tablecatrgory  AS c
                                                     ON p.category_ID = c.categoryID
                                                     WHERE c.categoryName LIKE '%$keysearch%' OR p.product_Name LIKE '%$keysearch%'"));
-
 ?>
 
 <!-- top Products -->
